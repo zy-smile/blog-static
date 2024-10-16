@@ -4,9 +4,9 @@ import {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/blog-static/',
+  base: process.env.NODE_ENV === 'production' ? '/blog-static/' : '/',
   title: "技术博客",
-  description: "vitepress搭建的静态博客网站",
+  description: "构建自己的前端知识体系",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [{
@@ -15,7 +15,7 @@ export default defineConfig({
       },
       {
         text: '博客',
-        link: '/markdown-examples'
+        link: '/web/html-study'
       }
     ],
 
