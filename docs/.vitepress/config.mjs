@@ -4,6 +4,7 @@ import {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/blog-static/',
   title: "技术博客",
   description: "vitepress搭建的静态博客网站",
   themeConfig: {
